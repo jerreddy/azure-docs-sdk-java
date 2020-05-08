@@ -5,10 +5,8 @@ items:
   artifact: com.azure:azure-messaging-servicebus:7.0.0-beta.1
   parent: com.azure.messaging.servicebus.implementation
   children:
-  - com.azure.messaging.servicebus.implementation.MessageUtils.LOCK_TOKEN_SIZE
   - com.azure.messaging.servicebus.implementation.MessageUtils.ZERO_LOCK_TOKEN
   - com.azure.messaging.servicebus.implementation.MessageUtils.adjustServerTimeout(java.time.Duration)
-  - com.azure.messaging.servicebus.implementation.MessageUtils.convertDotNetBytesToUUID(byte[])
   langs:
   - java
   name: MessageUtils
@@ -33,21 +31,6 @@ items:
   - java.lang.Object.wait()
   - java.lang.Object.wait(long)
   - java.lang.Object.wait(long,int)
-- uid: com.azure.messaging.servicebus.implementation.MessageUtils.LOCK_TOKEN_SIZE
-  id: LOCK_TOKEN_SIZE
-  artifact: com.azure:azure-messaging-servicebus:7.0.0-beta.1
-  parent: com.azure.messaging.servicebus.implementation.MessageUtils
-  langs:
-  - java
-  name: LOCK_TOKEN_SIZE
-  nameWithType: MessageUtils.LOCK_TOKEN_SIZE
-  fullName: com.azure.messaging.servicebus.implementation.MessageUtils.LOCK_TOKEN_SIZE
-  type: Field
-  package: com.azure.messaging.servicebus.implementation
-  syntax:
-    content: static final int LOCK_TOKEN_SIZE
-    return:
-      type: int
 - uid: com.azure.messaging.servicebus.implementation.MessageUtils.MessageUtils()
   id: MessageUtils()
   artifact: com.azure:azure-messaging-servicebus:7.0.0-beta.1
@@ -96,50 +79,11 @@ items:
       type: java.time.Duration
     return:
       type: java.time.Duration
-- uid: com.azure.messaging.servicebus.implementation.MessageUtils.convertDotNetBytesToUUID(byte[])
-  id: convertDotNetBytesToUUID(byte[])
-  artifact: com.azure:azure-messaging-servicebus:7.0.0-beta.1
-  parent: com.azure.messaging.servicebus.implementation.MessageUtils
-  langs:
-  - java
-  name: convertDotNetBytesToUUID(byte[] dotNetBytes)
-  nameWithType: MessageUtils.convertDotNetBytesToUUID(byte[] dotNetBytes)
-  fullName: com.azure.messaging.servicebus.implementation.MessageUtils.convertDotNetBytesToUUID(byte[] dotNetBytes)
-  overload: com.azure.messaging.servicebus.implementation.MessageUtils.convertDotNetBytesToUUID*
-  type: Method
-  package: com.azure.messaging.servicebus.implementation
-  summary: Converts a .NET GUID to its Java UUID representation.
-  syntax:
-    content: static UUID convertDotNetBytesToUUID(byte[] dotNetBytes)
-    parameters:
-    - id: dotNetBytes
-      type: byte[]
-      description: .NET GUID to convert.
-    return:
-      type: java.util.UUID
-      description: the equivalent UUID.
 references:
 - uid: com.azure.messaging.servicebus.implementation.MessageUtils.MessageUtils*
   name: MessageUtils
   nameWithType: MessageUtils.MessageUtils
   fullName: com.azure.messaging.servicebus.implementation.MessageUtils.MessageUtils
-  package: com.azure.messaging.servicebus.implementation
-- uid: byte[]
-  spec.java:
-  - uid: byte
-    name: byte
-    fullName: byte
-  - name: '[]'
-    fullName: '[]'
-- uid: java.util.UUID
-  spec.java:
-  - uid: java.util.UUID
-    name: UUID
-    fullName: java.util.UUID
-- uid: com.azure.messaging.servicebus.implementation.MessageUtils.convertDotNetBytesToUUID*
-  name: convertDotNetBytesToUUID
-  nameWithType: MessageUtils.convertDotNetBytesToUUID
-  fullName: com.azure.messaging.servicebus.implementation.MessageUtils.convertDotNetBytesToUUID
   package: com.azure.messaging.servicebus.implementation
 - uid: java.time.Duration
   spec.java:
@@ -151,11 +95,11 @@ references:
   nameWithType: MessageUtils.adjustServerTimeout
   fullName: com.azure.messaging.servicebus.implementation.MessageUtils.adjustServerTimeout
   package: com.azure.messaging.servicebus.implementation
-- uid: int
+- uid: java.util.UUID
   spec.java:
-  - uid: int
-    name: int
-    fullName: int
+  - uid: java.util.UUID
+    name: UUID
+    fullName: java.util.UUID
 - uid: java.lang.Object.notify()
   name: Object.notify()
   nameWithType: Object.notify()

@@ -5,7 +5,6 @@ items:
   artifact: com.azure:azure-security-keyvault-keys:4.2.0-beta.3
   parent: com.azure.security.keyvault.keys.cryptography
   children:
-  - com.azure.security.keyvault.keys.cryptography.LocalKeyEncryptionKeyAsyncClient.LocalKeyEncryptionKeyAsyncClient(com.azure.security.keyvault.keys.models.JsonWebKey)
   - com.azure.security.keyvault.keys.cryptography.LocalKeyEncryptionKeyAsyncClient.getKeyId()
   - com.azure.security.keyvault.keys.cryptography.LocalKeyEncryptionKeyAsyncClient.unwrapKey(java.lang.String,byte[])
   - com.azure.security.keyvault.keys.cryptography.LocalKeyEncryptionKeyAsyncClient.wrapKey(java.lang.String,byte[])
@@ -27,7 +26,6 @@ items:
   inheritedMembers:
   - com.azure.security.keyvault.keys.cryptography.LocalCryptographyAsyncClient.decrypt(com.azure.security.keyvault.keys.cryptography.models.EncryptionAlgorithm,byte[])
   - com.azure.security.keyvault.keys.cryptography.LocalCryptographyAsyncClient.encrypt(com.azure.security.keyvault.keys.cryptography.models.EncryptionAlgorithm,byte[])
-  - com.azure.security.keyvault.keys.cryptography.LocalCryptographyAsyncClient.getKeyId()
   - com.azure.security.keyvault.keys.cryptography.LocalCryptographyAsyncClient.sign(com.azure.security.keyvault.keys.cryptography.models.SignatureAlgorithm,byte[])
   - com.azure.security.keyvault.keys.cryptography.LocalCryptographyAsyncClient.signData(com.azure.security.keyvault.keys.cryptography.models.SignatureAlgorithm,byte[])
   - com.azure.security.keyvault.keys.cryptography.LocalCryptographyAsyncClient.unwrapKey(com.azure.security.keyvault.keys.cryptography.models.KeyWrapAlgorithm,byte[])
@@ -229,10 +227,6 @@ references:
   name: Object.clone()
   nameWithType: Object.clone()
   fullName: java.lang.Object.clone()
-- uid: com.azure.security.keyvault.keys.cryptography.LocalCryptographyAsyncClient.getKeyId()
-  name: LocalCryptographyAsyncClient.getKeyId()
-  nameWithType: LocalCryptographyAsyncClient.getKeyId()
-  fullName: com.azure.security.keyvault.keys.cryptography.LocalCryptographyAsyncClient.getKeyId()
 - uid: java.lang.Object.equals(java.lang.Object)
   name: Object.equals(Object)
   nameWithType: Object.equals(Object)

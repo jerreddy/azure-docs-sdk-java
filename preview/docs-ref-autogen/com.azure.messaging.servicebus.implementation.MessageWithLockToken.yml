@@ -5,7 +5,6 @@ items:
   artifact: com.azure:azure-messaging-servicebus:7.0.0-beta.1
   parent: com.azure.messaging.servicebus.implementation
   children:
-  - com.azure.messaging.servicebus.implementation.MessageWithLockToken.MessageWithLockToken(org.apache.qpid.proton.message.Message,java.util.UUID)
   - com.azure.messaging.servicebus.implementation.MessageWithLockToken.getLockToken()
   langs:
   - java

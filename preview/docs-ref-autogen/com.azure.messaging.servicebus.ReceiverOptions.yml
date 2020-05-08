@@ -4,10 +4,6 @@ items:
   id: ReceiverOptions
   artifact: com.azure:azure-messaging-servicebus:7.0.0-beta.1
   parent: com.azure.messaging.servicebus
-  children:
-  - com.azure.messaging.servicebus.ReceiverOptions.ReceiverOptions(com.azure.messaging.servicebus.models.ReceiveMode,int)
-  - com.azure.messaging.servicebus.ReceiverOptions.getPrefetchCount()
-  - com.azure.messaging.servicebus.ReceiverOptions.getReceiveMode()
   langs:
   - java
   name: ReceiverOptions
@@ -51,42 +47,6 @@ items:
       type: com.azure.messaging.servicebus.models.ReceiveMode
     - id: prefetchCount
       type: int
-- uid: com.azure.messaging.servicebus.ReceiverOptions.getPrefetchCount()
-  id: getPrefetchCount()
-  artifact: com.azure:azure-messaging-servicebus:7.0.0-beta.1
-  parent: com.azure.messaging.servicebus.ReceiverOptions
-  langs:
-  - java
-  name: getPrefetchCount()
-  nameWithType: ReceiverOptions.getPrefetchCount()
-  fullName: com.azure.messaging.servicebus.ReceiverOptions.getPrefetchCount()
-  overload: com.azure.messaging.servicebus.ReceiverOptions.getPrefetchCount*
-  type: Method
-  package: com.azure.messaging.servicebus
-  summary: Gets the prefetch count of the receiver.
-  syntax:
-    content: " int getPrefetchCount()"
-    return:
-      type: int
-      description: The prefetch count of the receiver.
-- uid: com.azure.messaging.servicebus.ReceiverOptions.getReceiveMode()
-  id: getReceiveMode()
-  artifact: com.azure:azure-messaging-servicebus:7.0.0-beta.1
-  parent: com.azure.messaging.servicebus.ReceiverOptions
-  langs:
-  - java
-  name: getReceiveMode()
-  nameWithType: ReceiverOptions.getReceiveMode()
-  fullName: com.azure.messaging.servicebus.ReceiverOptions.getReceiveMode()
-  overload: com.azure.messaging.servicebus.ReceiverOptions.getReceiveMode*
-  type: Method
-  package: com.azure.messaging.servicebus
-  summary: Gets the receive mode for the message.
-  syntax:
-    content: " ReceiveMode getReceiveMode()"
-    return:
-      type: com.azure.messaging.servicebus.models.ReceiveMode
-      description: the receive mode for the message.
 references:
 - uid: com.azure.messaging.servicebus.models.ReceiveMode
   name: ReceiveMode
@@ -101,16 +61,6 @@ references:
   name: ReceiverOptions
   nameWithType: ReceiverOptions.ReceiverOptions
   fullName: com.azure.messaging.servicebus.ReceiverOptions.ReceiverOptions
-  package: com.azure.messaging.servicebus
-- uid: com.azure.messaging.servicebus.ReceiverOptions.getReceiveMode*
-  name: getReceiveMode
-  nameWithType: ReceiverOptions.getReceiveMode
-  fullName: com.azure.messaging.servicebus.ReceiverOptions.getReceiveMode
-  package: com.azure.messaging.servicebus
-- uid: com.azure.messaging.servicebus.ReceiverOptions.getPrefetchCount*
-  name: getPrefetchCount
-  nameWithType: ReceiverOptions.getPrefetchCount
-  fullName: com.azure.messaging.servicebus.ReceiverOptions.getPrefetchCount
   package: com.azure.messaging.servicebus
 - uid: java.lang.Object.notify()
   name: Object.notify()

@@ -5,10 +5,8 @@ items:
   artifact: com.azure:azure-security-keyvault-keys:4.2.0-beta.3
   parent: com.azure.security.keyvault.keys.cryptography
   children:
-  - com.azure.security.keyvault.keys.cryptography.LocalCryptographyAsyncClient.LocalCryptographyAsyncClient(com.azure.security.keyvault.keys.models.JsonWebKey)
   - com.azure.security.keyvault.keys.cryptography.LocalCryptographyAsyncClient.decrypt(com.azure.security.keyvault.keys.cryptography.models.EncryptionAlgorithm,byte[])
   - com.azure.security.keyvault.keys.cryptography.LocalCryptographyAsyncClient.encrypt(com.azure.security.keyvault.keys.cryptography.models.EncryptionAlgorithm,byte[])
-  - com.azure.security.keyvault.keys.cryptography.LocalCryptographyAsyncClient.getKeyId()
   - com.azure.security.keyvault.keys.cryptography.LocalCryptographyAsyncClient.sign(com.azure.security.keyvault.keys.cryptography.models.SignatureAlgorithm,byte[])
   - com.azure.security.keyvault.keys.cryptography.LocalCryptographyAsyncClient.signData(com.azure.security.keyvault.keys.cryptography.models.SignatureAlgorithm,byte[])
   - com.azure.security.keyvault.keys.cryptography.LocalCryptographyAsyncClient.unwrapKey(com.azure.security.keyvault.keys.cryptography.models.KeyWrapAlgorithm,byte[])
@@ -165,22 +163,6 @@ items:
       description: >-
         A <xref uid="reactor.core.publisher.Mono" data-throw-if-not-resolved="false">Mono</xref> containing a <xref uid="com.azure.security.keyvault.keys.cryptography.models.EncryptResult" data-throw-if-not-resolved="false">EncryptResult</xref> whose <xref uid="com.azure.security.keyvault.keys.cryptography.models.EncryptResult.getCipherText()" data-throw-if-not-resolved="false">cipher text</xref>
          contains the encrypted content.
-- uid: com.azure.security.keyvault.keys.cryptography.LocalCryptographyAsyncClient.getKeyId()
-  id: getKeyId()
-  artifact: com.azure:azure-security-keyvault-keys:4.2.0-beta.3
-  parent: com.azure.security.keyvault.keys.cryptography.LocalCryptographyAsyncClient
-  langs:
-  - java
-  name: getKeyId()
-  nameWithType: LocalCryptographyAsyncClient.getKeyId()
-  fullName: com.azure.security.keyvault.keys.cryptography.LocalCryptographyAsyncClient.getKeyId()
-  overload: com.azure.security.keyvault.keys.cryptography.LocalCryptographyAsyncClient.getKeyId*
-  type: Method
-  package: com.azure.security.keyvault.keys.cryptography
-  syntax:
-    content: " Mono<String> getKeyId()"
-    return:
-      type: reactor.core.publisher.Mono<java.lang.String>
 - uid: com.azure.security.keyvault.keys.cryptography.LocalCryptographyAsyncClient.sign(com.azure.security.keyvault.keys.cryptography.models.SignatureAlgorithm,byte[])
   id: sign(com.azure.security.keyvault.keys.cryptography.models.SignatureAlgorithm,byte[])
   artifact: com.azure:azure-security-keyvault-keys:4.2.0-beta.3
@@ -477,23 +459,6 @@ references:
   nameWithType: LocalCryptographyAsyncClient.LocalCryptographyAsyncClient
   fullName: com.azure.security.keyvault.keys.cryptography.LocalCryptographyAsyncClient.LocalCryptographyAsyncClient
   package: com.azure.security.keyvault.keys.cryptography
-- uid: reactor.core.publisher.Mono<java.lang.String>
-  spec.java:
-  - uid: reactor.core.publisher.Mono
-    name: Mono
-    fullName: reactor.core.publisher.Mono
-  - name: <
-    fullName: <
-  - uid: java.lang.String
-    name: String
-    fullName: java.lang.String
-  - name: '>'
-    fullName: '>'
-- uid: com.azure.security.keyvault.keys.cryptography.LocalCryptographyAsyncClient.getKeyId*
-  name: getKeyId
-  nameWithType: LocalCryptographyAsyncClient.getKeyId
-  fullName: com.azure.security.keyvault.keys.cryptography.LocalCryptographyAsyncClient.getKeyId
-  package: com.azure.security.keyvault.keys.cryptography
 - uid: com.azure.security.keyvault.keys.cryptography.models.EncryptionAlgorithm
   name: EncryptionAlgorithm
   nameWithType: EncryptionAlgorithm
@@ -673,10 +638,6 @@ references:
   name: Mono
   nameWithType: Mono
   fullName: reactor.core.publisher.Mono
-- uid: java.lang.String
-  name: String
-  nameWithType: String
-  fullName: java.lang.String
 - uid: com.azure.security.keyvault.keys.cryptography.models.EncryptResult
   name: EncryptResult
   nameWithType: EncryptResult

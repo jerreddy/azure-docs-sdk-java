@@ -5,7 +5,6 @@ items:
   artifact: com.azure:azure-messaging-servicebus:7.0.0-beta.1
   parent: com.azure.messaging.servicebus.implementation
   children:
-  - com.azure.messaging.servicebus.implementation.ServiceBusReactorReceiver.ServiceBusReactorReceiver(java.lang.String,org.apache.qpid.proton.engine.Receiver,com.azure.core.amqp.implementation.handler.ReceiveLinkHandler,com.azure.core.amqp.implementation.TokenManager,com.azure.core.amqp.implementation.ReactorDispatcher)
   - com.azure.messaging.servicebus.implementation.ServiceBusReactorReceiver.decodeDelivery(org.apache.qpid.proton.engine.Delivery)
   langs:
   - java

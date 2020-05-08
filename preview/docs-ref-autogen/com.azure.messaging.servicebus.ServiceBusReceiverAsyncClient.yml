@@ -5,7 +5,6 @@ items:
   artifact: com.azure:azure-messaging-servicebus:7.0.0-beta.1
   parent: com.azure.messaging.servicebus
   children:
-  - com.azure.messaging.servicebus.ServiceBusReceiverAsyncClient.ServiceBusReceiverAsyncClient(java.lang.String,java.lang.String,com.azure.messaging.servicebus.implementation.MessagingEntityType,boolean,com.azure.messaging.servicebus.ReceiverOptions,com.azure.messaging.servicebus.implementation.ServiceBusConnectionProcessor,com.azure.core.amqp.implementation.TracerProvider,com.azure.core.amqp.implementation.MessageSerializer,com.azure.messaging.servicebus.implementation.MessageLockContainer,java.lang.Runnable)
   - com.azure.messaging.servicebus.ServiceBusReceiverAsyncClient.abandon(com.azure.messaging.servicebus.MessageLockToken)
   - com.azure.messaging.servicebus.ServiceBusReceiverAsyncClient.abandon(com.azure.messaging.servicebus.MessageLockToken,java.util.Map<java.lang.String,java.lang.Object>)
   - com.azure.messaging.servicebus.ServiceBusReceiverAsyncClient.close()
